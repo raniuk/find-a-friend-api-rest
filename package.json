@@ -1,0 +1,46 @@
+{
+  "name": "find-a-friend-api-rest",
+  "version": "1.0.0",
+  "description": "Find a friend",
+  "main": "index.js",
+  "engines": {
+    "node": "20.11.0"
+  },
+  "repository": "https://github.com/raniuk/find-a-friend-api-rest.git",
+  "author": "Adalid <ren.webmobile@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run --dir src/application/usecases",
+    "test:watch": "vitest --dir src/application/usecases",
+    "test:e2e": "vitest run --dir src/infrastructure/controllers",
+    "test:e2e:watch": "vitest --dir src/infrastructure/controllers",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/jwt": "^8.0.0",
+    "@prisma/client": "^5.9.1",
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.1",
+    "fastify": "^4.26.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.11.16",
+    "@types/supertest": "^6.0.2",
+    "@vitest/coverage-v8": "^1.3.0",
+    "eslint": "^8.56.0",
+    "prisma": "^5.9.1",
+    "supertest": "^6.3.4",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.2.2"
+  }
+}

@@ -1,0 +1,12 @@
+# Folders
+node_modules
+build
+coverage
+
+# Keep environment variables out of version control
+.env
+
+# Locks
+package-lock.json
+yarn.lock
+yarn-error.log
