@@ -73,8 +73,7 @@ yarn test:watch       //Watch tests usecases
 yarn test:e2e         //Run tests controllers
 yarn test:e2e:watch   //Watch tests controllers
 
-yarn test:coverage    //Watch tests usecases
-yarn test:ui          //Show tests result
+yarn test:coverage
 ```
 
 Test with npm
@@ -86,6 +85,5 @@ npm run test:watch      //Watch tests usecases
 npm run test:e2e        //Run tests controllers
 npm run test:e2e:watch  //Watch tests controllers
 
-npm run test:coverage   //Watch tests usecases
-npm run test:ui         //Show tests result
+npm run test:coverage
 ```
